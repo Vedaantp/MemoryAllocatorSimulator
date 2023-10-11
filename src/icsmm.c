@@ -509,28 +509,3 @@ int ics_free(void *ptr) {
 
     return -1;
 }
-
-/********************** EXTRA CREDIT ***************************************/
-
-/*
- * Resizes the dynamically allocated memory, pointed to by ptr, to at least size 
- * bytes. See Homework Document for specific description.
- *
- * @param ptr Address of the previously allocated memory region.
- * @param size The minimum size to resize the allocated memory to.
- * @return If successful, the pointer to the block of allocated memory is
- * returned. Else, NULL is returned and errno is set appropriately.
- *
- * If there is no memory available ics_malloc will set errno to ENOMEM. 
- *
- * If ics_realloc is called with an invalid pointer, set errno to EINVAL. See ics_free
- * for more details.
- *
- * If ics_realloc is called with a valid pointer and a size of 0, the allocated     
- * block is free'd and return NULL.
- */
-void *ics_realloc(void *ptr, size_t size) {
-    printf("Realloc Not Implemented Yet\n");
-
-    return NULL;
-}
